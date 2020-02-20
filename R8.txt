@@ -1,0 +1,14 @@
+en
+conf t
+router rip
+version 2
+no auto-summary
+network 20.0.0.4
+exit
+router eigrp 1
+network 30.0.0.0 0.0.0.3
+redistribute metric 1
+exit
+router rip 
+redistribute eigrp 1 metric 1   
+do wr

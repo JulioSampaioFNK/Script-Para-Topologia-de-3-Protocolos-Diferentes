@@ -1,0 +1,10 @@
+en
+conf t
+router rip
+version 2
+no auto-summary
+network 20.0.0.0
+network 20.0.0.4
+network 20.0.0.8
+network 20.0.0.12
+do wr

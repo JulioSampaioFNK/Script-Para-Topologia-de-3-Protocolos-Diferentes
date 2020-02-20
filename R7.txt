@@ -1,0 +1,6 @@
+en
+conf t
+router ospf 1
+network 10.0.0.0 0.0.0.3 area 0
+network 10.0.0.8 0.0.0.3 area 0
+do wr
